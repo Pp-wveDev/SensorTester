@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sensor tester</string>
+    <string name="choose_message">Please, select one of the sensors:</string>
+    <string name="XAxis">First value</string>
+    <string name="YAxis">Second value</string>
+    <string name="ZAxis">Third value</string>
+</resources>

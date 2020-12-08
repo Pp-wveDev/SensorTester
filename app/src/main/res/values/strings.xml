@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sensor Tester</string>
+    <string name="choose_message">Please, select one of the sensors:</string>
+    <string name="XAxis">Fist Value</string>
+    <string name="YAxis">Second Value</string>
+    <string name="ZAxis">Third Value</string>
+</resources>

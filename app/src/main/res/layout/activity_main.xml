@@ -21,7 +21,6 @@
         android:id="@+id/spinner"
         android:layout_width="241dp"
         android:layout_height="20dp"
-        android:entries="@array/sensors"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         SensorManager sM = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         sensorsArray = sM.getSensorList(Sensor.TYPE_ALL);
 
+        sensorsString.add(getString(R.string.select_device));
         for(Sensor s : sensorsArray) {
             sensorsString.add(s.getName());
         }
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                                                                 android.R.layout.simple_spinner_item,
                                                                 sensorsString);
 
-        spinner = (Spinner) findViewById(R.id.spinner);
+        spinner = findViewById(R.id.spinner);
         spinner.setAdapter(sensorAdapter);
         spinner.setOnItemSelectedListener(this);
     }
@@ -46,12 +47,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         Intent intent;
-        //String item = parent.getItemAtPosition(position).toString();
 
-        intent = new Intent(this, SensorActivity.class);
-        intent.putExtra("sensorId", Integer.toString(position));
-        startActivity(intent);
-
+        if (position > 0) {
+            intent = new Intent(this, SensorActivity.class);
+            intent.putExtra("sensorId", Integer.toString(position + 1));
+            startActivity(intent);
+        }
     }
 
     @Override

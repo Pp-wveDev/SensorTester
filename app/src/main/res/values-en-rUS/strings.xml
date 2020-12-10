@@ -2,7 +2,9 @@
 <resources>
     <string name="app_name">Sensor tester</string>
     <string name="choose_message">Please, select one of the sensors:</string>
+    <string name="select_device">Select…</string>
     <string name="XAxis">First value</string>
     <string name="YAxis">Second value</string>
     <string name="ZAxis">Third value</string>
+    <string name="default_lecture">No lectures yet</string>
 </resources>
